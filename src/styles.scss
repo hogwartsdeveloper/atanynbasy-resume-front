@@ -1,2 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
 @import "assets/custom-icons/icons.css";
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/assets/fonts/fira-code/FiraCode-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/assets/fonts/fira-code/FiraCode-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/assets/fonts/fira-code/FiraCode-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/assets/fonts/fira-code/FiraCode-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/assets/fonts/fira-code/FiraCode-Light.ttf");
+  font-weight: 300;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background: #282C33;
+  overflow: hidden;
+}
