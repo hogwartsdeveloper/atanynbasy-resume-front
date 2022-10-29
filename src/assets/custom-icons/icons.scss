@@ -21,9 +21,13 @@ line-height: 1;
 }
 
 $icons-map: (
-  "logo": "\f101",
+  "linkedin": "\f101",
+  "logo": "\f102",
 );
 
+    .icon-linkedin:before {
+  content: map-get($icons-map, "linkedin");
+  }
     .icon-logo:before {
   content: map-get($icons-map, "logo");
   }

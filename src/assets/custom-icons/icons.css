@@ -18,6 +18,9 @@ line-height: 1;
 -moz-osx-font-smoothing: grayscale;
 }
 
-    .icon-logo:before {
+    .icon-linkedin:before {
   content: "\f101";
+  }
+    .icon-logo:before {
+  content: "\f102";
   }
