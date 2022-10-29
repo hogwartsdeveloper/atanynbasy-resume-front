@@ -1,0 +1,31 @@
+$paddingsNumber: (
+  5:5
+);
+
+@each $type, $padding in $paddingsNumber {
+  .p-t-#{$type} {
+    padding-top: #{$padding}px !important;
+  }
+
+  .p-b-#{$type} {
+    padding-bottom: #{$padding}px !important;
+  }
+
+  .p-l-#{$type} {
+    padding-left: #{$padding}px !important;
+  }
+
+  .p-r-#{$type} {
+    padding-right: #{$padding}px !important;
+  }
+
+  .p-x-#{$type} {
+    padding-left: #{$padding}px !important;
+    padding-right: #{$padding}px !important;
+  }
+
+  .p-y-#{$type} {
+    padding-top: #{$padding}px !important;
+    padding-bottom: #{$padding}px !important;
+  }
+}

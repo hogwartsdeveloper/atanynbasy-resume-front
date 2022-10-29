@@ -1,0 +1,35 @@
+$marginsNumbers: (
+  1: 1,
+  5: 5,
+  10: 10,
+  15: 15,
+  20: 20
+);
+
+@each $type, $margin in $marginsNumbers {
+  .m-t-#{$type} {
+    margin-top: #{$margin}px !important;
+  }
+
+  .m-b-#{$type} {
+    margin-bottom: #{$margin}px !important;
+  }
+
+  .m-l-#{$type} {
+    margin-left: #{$margin}px !important;
+  }
+
+  .m-r-#{$type} {
+    margin-right: #{$margin}px !important;
+  }
+
+  .m-x-#{$type} {
+    margin-left: #{$margin}px !important;
+    margin-right: #{$margin}px !important;
+  }
+
+  .m-y-#{$type} {
+    margin-top: #{$margin}px !important;
+    margin-bottom: #{$margin}px !important;
+  }
+}
