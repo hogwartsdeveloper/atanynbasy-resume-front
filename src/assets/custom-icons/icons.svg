@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>[object Object]</metadata>
+<defs>
+  <font id="icons" horiz-adv-x="282.3529411764706">
+    <font-face font-family="icons"
+      units-per-em="300" ascent="0.5"
+      descent="45" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="logo"
+      unicode="&#xF101;"
+      horiz-adv-x="282.3529411764706" d="M211.764705882353 246.1764705882353H141.1764705882353V175.5882352941176H70.5882352941177H0V105V34.4117647058824V-36.1764705882353H70.5882352941177H141.1764705882353V34.4117647058824H211.764705882353H282.3529411764706V105V175.5882352941176V246.1764705882353H211.764705882353zM70.5882352941177 34.4117647058824H141.1764705882353V105H211.764705882353V175.5882352941176H141.1764705882353V105H70.5882352941177V34.4117647058824z" />
+  </font>
+</defs>
+</svg>
