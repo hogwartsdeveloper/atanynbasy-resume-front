@@ -3,3 +3,22 @@
   display: flex;
   justify-content: space-between;
 }
+
+.title {
+  color: #fff;
+  font-size: 16px;
+}
+
+.links {
+  & > a  {
+    &.active {
+      color: #ffffff;
+    }
+    color: #ABB2BF;
+
+    & > i {
+      color: #C778DD;
+
+    }
+  }
+}
