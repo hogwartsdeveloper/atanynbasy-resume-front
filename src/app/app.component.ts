@@ -9,13 +9,13 @@ import {MessageService} from "./message.service";
 export class AppComponent implements OnInit {
   title = 'atanynbasy-front';
 
-  constructor(private messageService: MessageService) {}
+  // constructor(private messageService: MessageService) {}
 
   ngOnInit() {
-    this.messageService.getNewMessage().subscribe(msg => console.log(msg))
+    // this.messageService.getNewMessage().subscribe(msg => console.log(msg))
   }
 
   sendMessage() {
-    this.messageService.sendMessage('Altosh')
+    // this.messageService.sendMessage('Altosh')
   }
 }
