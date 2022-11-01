@@ -21,13 +21,21 @@ line-height: 1;
 }
 
 $icons-map: (
-  "linkedin": "\f101",
-  "logo": "\f102",
+  "close": "\f101",
+  "linkedin": "\f102",
+  "logo": "\f103",
+  "menu": "\f104",
 );
 
+    .icon-close:before {
+  content: map-get($icons-map, "close");
+  }
     .icon-linkedin:before {
   content: map-get($icons-map, "linkedin");
   }
     .icon-logo:before {
   content: map-get($icons-map, "logo");
+  }
+    .icon-menu:before {
+  content: map-get($icons-map, "menu");
   }

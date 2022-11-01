@@ -3,7 +3,7 @@
   <span>Zhannur</span>
 </div>
 
-<div class="links">
+<div class="links" #menu>
   <a class="active m-r-15">
     <span class="m-r-1">#</span>
     <span>home</span>
@@ -22,4 +22,8 @@
   </a>
 
   <app-language-select></app-language-select>
+</div>
+
+<div class="menu-btn" (click)="openMenu(menu, menuIcon)">
+  <i class="icon icon-menu" #menuIcon></i>
 </div>
