@@ -8,6 +8,7 @@ import {ToolbarModule} from "./modules/toolbar/toolbar.module";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import {MainModule} from "./modules/main/main.module";
 
 const socketConfig: SocketIoConfig = { url: 'http://localhost:3000', options: {}};
 
@@ -26,12 +27,13 @@ export function HttpLoaderFactory(http: HttpClient) {
         HttpClientModule,
         ToolbarModule,
         TranslateModule.forRoot({
-          loader: {
-            provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-          }
-        })
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
+        MainModule
     ],
   providers: [],
   bootstrap: [AppComponent]
