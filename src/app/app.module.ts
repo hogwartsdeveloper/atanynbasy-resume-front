@@ -5,8 +5,15 @@ import { AppComponent } from './app.component';
 import {SocketIoConfig, SocketIoModule} from "ngx-socket-io";
 import { PlanetComponent } from './planet/planet.component';
 import {ToolbarModule} from "./modules/toolbar/toolbar.module";
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 
-const socketConfig: SocketIoConfig = { url: 'http://localhost:3000', options: {}}
+const socketConfig: SocketIoConfig = { url: 'http://localhost:3000', options: {}};
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -16,7 +23,15 @@ const socketConfig: SocketIoConfig = { url: 'http://localhost:3000', options: {}
     imports: [
         BrowserModule,
         SocketIoModule.forRoot(socketConfig),
+        HttpClientModule,
         ToolbarModule,
+        TranslateModule.forRoot({
+          loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+          }
+        })
     ],
   providers: [],
   bootstrap: [AppComponent]

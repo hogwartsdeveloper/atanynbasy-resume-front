@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ToolbarComponent} from './toolbar/toolbar.component';
 import {LanguageSelectComponent} from './language-select/language-select.component';
+import {TranslateModule} from "@ngx-translate/core";
 
 
 @NgModule({
@@ -12,8 +13,9 @@ import {LanguageSelectComponent} from './language-select/language-select.compone
     exports: [
         ToolbarComponent
     ],
-    imports: [
-        CommonModule,
-    ]
+  imports: [
+    CommonModule,
+    TranslateModule
+  ]
 })
 export class ToolbarModule { }
