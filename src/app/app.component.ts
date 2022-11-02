@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {MessageService} from "./message.service";
 import {TranslateService} from "@ngx-translate/core";
 
 @Component({
@@ -12,7 +11,6 @@ export class AppComponent implements OnInit {
 
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('en');
-    translate.use('en');
   }
 
   // constructor(private messageService: MessageService) {}

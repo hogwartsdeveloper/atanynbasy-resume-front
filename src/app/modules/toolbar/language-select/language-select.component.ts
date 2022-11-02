@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ILanguage, LanguageType} from "../../../models/language.model";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-language-select',
@@ -14,13 +15,15 @@ export class LanguageSelectComponent implements OnInit {
     {value: LanguageType.Ru, name: 'ru'},
   ]
 
-  constructor() { }
+  constructor(private translateService: TranslateService) { }
 
   ngOnInit(): void {
+    this.translateService.use(this.selectedLanguage.name);
   }
 
   onSelectLang(lang: ILanguage) {
     this.selectedLanguage = lang;
+    this.translateService.use(lang.name);
   }
 
   openLangMenu(block: HTMLElement) {
