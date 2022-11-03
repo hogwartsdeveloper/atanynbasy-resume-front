@@ -1,5 +1,7 @@
 $paddingsNumber: (
-  5:5
+  5:5,
+  16: 16,
+  32: 32
 );
 
 @each $type, $padding in $paddingsNumber {
@@ -27,5 +29,9 @@ $paddingsNumber: (
   .p-y-#{$type} {
     padding-top: #{$padding}px !important;
     padding-bottom: #{$padding}px !important;
+  }
+
+  .p-#{$type} {
+    padding: #{$padding}px !important;
   }
 }

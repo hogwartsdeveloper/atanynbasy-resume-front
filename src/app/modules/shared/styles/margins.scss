@@ -3,7 +3,10 @@ $marginsNumbers: (
   5: 5,
   10: 10,
   15: 15,
-  20: 20
+  20: 20,
+  25: 25,
+  30: 30,
+  67: 67
 );
 
 @each $type, $margin in $marginsNumbers {
