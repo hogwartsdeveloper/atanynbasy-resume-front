@@ -61,11 +61,41 @@
 }
 
 .quote {
+  position: relative;
   display: flex;
   justify-content: center;
   & .content, & .author {
     border: 1px solid #ABB2BF;
     font-size: 24px;
     font-weight: 500;
+  }
+
+  & .content {
+    position: relative;
+
+    & > span {
+      position: absolute;
+      font-size: 55px;
+      background: #282c33;
+      color: #ABB2BF;
+      height: 30px;
+
+      &:first-child {
+        top: -19px;
+        left: 10px;
+      }
+
+      &:last-child {
+        bottom: -12px;
+        right: 15px;
+      }
+    }
+  }
+
+  & .author {
+    position: absolute;
+    bottom: -65px;
+    right: 178px;
+    z-index: -1;
   }
 }
